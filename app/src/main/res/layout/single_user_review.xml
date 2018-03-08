@@ -35,7 +35,7 @@
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/circleImageView"
+                        android:id="@+id/civ_res_logo"
                         android:layout_width="75dp"
                         android:layout_height="match_parent"
                         android:layout_margin="10dp"
@@ -48,7 +48,7 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/tv_res_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="KFC Restaurent"
@@ -56,7 +56,7 @@
                             android:textSize="20sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/tv_res_location"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Spencers, Trichy"
@@ -67,6 +67,7 @@
                 </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/btn_bookmark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
@@ -91,6 +92,7 @@
                     android:orientation="horizontal">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_user_image"
                         android:layout_width="75dp"
                         android:layout_height="55dp"
                         android:layout_margin="10dp"
@@ -103,6 +105,7 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/tv_user_name"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="USER NAME"
@@ -114,11 +117,13 @@
                             android:orientation="horizontal">
 
                             <TextView
+                                android:id="@+id/tv_user_review"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="28reviews" />
 
                             <TextView
+                                android:id="@+id/tv_user_points"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="10dp"
@@ -134,7 +139,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageView"
+                        android:id="@+id/iv_user_feedimage"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:scaleType="fitXY"
@@ -142,6 +147,7 @@
                         android:contentDescription="uhij" />
 
                     <TextView
+                        android:id="@+id/tv_user_feed"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -153,6 +159,7 @@
                         android:gravity="start" />
 
                     <TextView
+                        android:id="@+id/tv_user_upvote"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
