@@ -4,6 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.snackhoop.mealsonwheels.accountactivity.AccountActivity">
+    tools:context="com.snackhoop.mealsonwheels.accountactivity.AccountActivity"
+   >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/account_container"
+        android:layout_height="match_parent">
 
+    </FrameLayout>
 </android.support.constraint.ConstraintLayout>
