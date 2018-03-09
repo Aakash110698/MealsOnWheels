@@ -12,5 +12,5 @@
     <string name="app_title">MEAL ON WHEEL</string>
     <string name="app_definition">Order food on the journey</string>
     <string name="login_btn">LOGIN</string>
-    <string name="signup_btn">SIGNUP NOW</string>
+    <string name="signup_btn">SIGNUP</string>
 </resources>
