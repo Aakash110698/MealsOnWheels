@@ -2,5 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/holtwood_one_sc</item>
+        <item>@font/raleway_medium</item>
+        <item>@font/raleway_thin</item>
     </array>
 </resources>
