@@ -23,8 +23,13 @@ import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
 import com.snackhoop.mealsonwheels.R;
+import com.snackhoop.mealsonwheels.restaurentListActivity.MapsActivity;
+import com.snackhoop.mealsonwheels.restaurentListActivity.RestaurentListActivity;
+import com.snackhoop.mealsonwheels.root.PlaceIdIntent;
 
 import org.w3c.dom.Text;
+
+import java.util.Map;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -67,12 +72,14 @@ public class HomeActivity extends AppCompatActivity
         View bottomsheet = findViewById(R.id.bottomsheet);
         bottomSheetBehavior = BottomSheetBehavior.from(bottomsheet);
         bottomSheetBehavior.setState(4);
+        bottomSheetBehavior.setHideable(false);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 origin.setOnClickListener(this);
+btn_search.setOnClickListener(this);
 destination.setOnClickListener(this);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -148,7 +155,12 @@ destination.setOnClickListener(this);
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_search:
+                Intent intent = new Intent(HomeActivity.this, RestaurentListActivity.class);
 
+                PlaceIdIntent placeIdIntent = new PlaceIdIntent(origin_place.getId(),destination_place.getId());
+                intent.putExtra(getString(R.string.placeidintent),placeIdIntent);
+
+                startActivity(intent);
                 break;
             case R.id.cardView_Destination:
                 PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
@@ -190,6 +202,7 @@ destination.setOnClickListener(this);
                 origin_place = PlacePicker.getPlace(data,this);
                 textView_origin.setText(origin_place.getName());
                 Log.d("TAG", "onActivityResult: "+origin_place.getName());
+
             }
         }
 

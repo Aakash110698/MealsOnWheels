@@ -13,4 +13,6 @@
     <string name="app_definition">Order food on the journey</string>
     <string name="login_btn">LOGIN</string>
     <string name="signup_btn">SIGNUP NOW</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="placeidintent">placeidintent</string>
 </resources>
