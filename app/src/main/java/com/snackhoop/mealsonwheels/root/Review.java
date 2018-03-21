@@ -14,7 +14,7 @@ public class Review {
     private String name;
     @SerializedName("photo_url")
     @Expose
-    private String photoUrl;
+    private String photo_url;
     @SerializedName("rating")
     @Expose
     private Integer rating;
@@ -44,12 +44,12 @@ public class Review {
         this.name = name;
     }
 
-    public String getPhotoUrl() {
-        return photoUrl;
+    public String getPhoto_url() {
+        return photo_url;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setPhoto_url(String photoUrl) {
+        this.photo_url = photoUrl;
     }
 
     public Integer getRating() {

@@ -37,7 +37,10 @@
         <activity
             android:name=".restaurentListActivity.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".ShowRestaurentActivity.ShowRestuarentActivity"></activity>
+        <activity android:name=".ShowRestaurentActivity.ShowRestuarentActivity">
+
+        </activity>
+        <activity android:name=".RestuarentPage.RestaurentActivity"></activity>
     </application>
 
 </manifest>

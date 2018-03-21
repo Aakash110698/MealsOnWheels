@@ -35,6 +35,7 @@ public class RestuarentAdapter extends RecyclerView.Adapter<RestuarentAdapter.Re
 
     public RestuarentAdapter(List<RestuarentDetails> restuarentDetails,Context context) {
         this.restuarentDetails = restuarentDetails;
+        this.context = context;
     }
 
     @Override
@@ -45,6 +46,11 @@ public class RestuarentAdapter extends RecyclerView.Adapter<RestuarentAdapter.Re
     @Override
     public void onBindViewHolder(RestaurentViewHolder holder, int position) {
 
+    }
+
+    @Override
+    public void onBindViewHolder(RestaurentViewHolder holder, int position, List<Object> payloads) {
+        holder.loadData(restuarentDetails.get(position),context);
     }
 
     @Override
@@ -79,7 +85,8 @@ public class RestuarentAdapter extends RecyclerView.Adapter<RestuarentAdapter.Re
             tvResLocation.setText(details.getAddress().split(",")[1]);
             tvResRating.setText(details.getRating()+"");
             tvResName.setText(details.getName());
-            tvResStatusTime.setText(details.getClosingTime());
+            tvResStatusTime.setText("Opens At "+details.getClosingTime());
+
             Glide.with(context).load(details.getPhotourl().get(0).getUrl()).into(new SimpleTarget<Drawable>() {
                 @Override
                 public void onResourceReady(Drawable resource, Transition<? super Drawable> transition) {

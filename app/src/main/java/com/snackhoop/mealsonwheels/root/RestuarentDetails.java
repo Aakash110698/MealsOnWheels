@@ -15,7 +15,7 @@ public class RestuarentDetails {
     private String area;
     @SerializedName("closing_time")
     @Expose
-    private String closingTime;
+    private String closing_time;
     @SerializedName("description")
     @Expose
     private String description;
@@ -33,10 +33,10 @@ public class RestuarentDetails {
     private String name;
     @SerializedName("opening_hours")
     @Expose
-    private OpeningHours openingHours;
+    private OpeningHours opening_hours;
     @SerializedName("opening_time")
     @Expose
-    private String openingTime;
+    private String opening_time;
     @SerializedName("photourl")
     @Expose
     private List<Photourl> photourl = null;
@@ -45,7 +45,7 @@ public class RestuarentDetails {
     private Double rating;
     @SerializedName("rating_overall")
     @Expose
-    private RatingOverall ratingOverall;
+    private RatingOverall rating_overall;
     @SerializedName("review")
     @Expose
     private List<Review> review = null;
@@ -70,11 +70,11 @@ public class RestuarentDetails {
     }
 
     public String getClosingTime() {
-        return closingTime;
+        return closing_time;
     }
 
     public void setClosingTime(String closingTime) {
-        this.closingTime = closingTime;
+        this.closing_time = closingTime;
     }
 
     public String getDescription() {
@@ -95,6 +95,38 @@ public class RestuarentDetails {
 
     public Double getLongitude() {
         return longitude;
+    }
+
+    public String getClosing_time() {
+        return closing_time;
+    }
+
+    public void setClosing_time(String closing_time) {
+        this.closing_time = closing_time;
+    }
+
+    public OpeningHours getOpening_hours() {
+        return opening_hours;
+    }
+
+    public void setOpening_hours(OpeningHours opening_hours) {
+        this.opening_hours = opening_hours;
+    }
+
+    public String getOpening_time() {
+        return opening_time;
+    }
+
+    public void setOpening_time(String opening_time) {
+        this.opening_time = opening_time;
+    }
+
+    public RatingOverall getRating_overall() {
+        return rating_overall;
+    }
+
+    public void setRating_overall(RatingOverall rating_overall) {
+        this.rating_overall = rating_overall;
     }
 
     public void setLongitude(Double longitude) {
@@ -118,19 +150,19 @@ public class RestuarentDetails {
     }
 
     public OpeningHours getOpeningHours() {
-        return openingHours;
+        return opening_hours;
     }
 
     public void setOpeningHours(OpeningHours openingHours) {
-        this.openingHours = openingHours;
+        this.opening_hours = openingHours;
     }
 
     public String getOpeningTime() {
-        return openingTime;
+        return opening_time;
     }
 
     public void setOpeningTime(String openingTime) {
-        this.openingTime = openingTime;
+        this.opening_time = openingTime;
     }
 
     public List<Photourl> getPhotourl() {
@@ -150,11 +182,11 @@ public class RestuarentDetails {
     }
 
     public RatingOverall getRatingOverall() {
-        return ratingOverall;
+        return rating_overall;
     }
 
     public void setRatingOverall(RatingOverall ratingOverall) {
-        this.ratingOverall = ratingOverall;
+        this.rating_overall = ratingOverall;
     }
 
     public List<Review> getReview() {

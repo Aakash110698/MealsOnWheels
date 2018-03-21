@@ -118,7 +118,8 @@ public class RestaurentListActivity extends AppCompatActivity implements OnMapRe
                 line.setTag("Total Distance");
                 line.setClickable(true);
                 line = googleMap.addPolyline(options);
-
+                CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(mLatLngList.get(0), 10);
+                googleMap.animateCamera(cameraUpdate);
 
 
 

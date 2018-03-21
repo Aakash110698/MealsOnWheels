@@ -11,7 +11,7 @@ public class RatingOverall {
     private Integer food;
     @SerializedName("look_and_feel")
     @Expose
-    private Integer lookAndFeel;
+    private Integer look_and_feel;
     @SerializedName("service")
     @Expose
     private Integer service;
@@ -24,12 +24,12 @@ public class RatingOverall {
         this.food = food;
     }
 
-    public Integer getLookAndFeel() {
-        return lookAndFeel;
+    public Integer getLook_and_feel() {
+        return look_and_feel;
     }
 
-    public void setLookAndFeel(Integer lookAndFeel) {
-        this.lookAndFeel = lookAndFeel;
+    public void setLook_and_feel(Integer look_and_feel) {
+        this.look_and_feel = look_and_feel;
     }
 
     public Integer getService() {
