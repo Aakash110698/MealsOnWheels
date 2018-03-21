@@ -1,5 +1,5 @@
 
-package com.snackhoop.mealsonwheels.ShowRestaurentActivity;
+package com.snackhoop.mealsonwheels.root;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -82,10 +82,6 @@ public class OpeningHours {
 
     public void setWed(String wed) {
         this.wed = wed;
-    }
-    @Override
-    public String toString(){
-        return null;
     }
 
 }

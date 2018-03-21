@@ -1,6 +1,6 @@
 package com.snackhoop.mealsonwheels.webservices;
 
-import com.snackhoop.mealsonwheels.ShowRestaurentActivity.RestuarentDetails;
+import com.snackhoop.mealsonwheels.root.RestuarentDetails;
 import com.snackhoop.mealsonwheels.root.GoogleMapDirectionData;
 
 import java.util.List;

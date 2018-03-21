@@ -1,5 +1,5 @@
 
-package com.snackhoop.mealsonwheels.ShowRestaurentActivity;
+package com.snackhoop.mealsonwheels.root;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

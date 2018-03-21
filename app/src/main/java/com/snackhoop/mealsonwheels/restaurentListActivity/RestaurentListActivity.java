@@ -24,7 +24,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.snackhoop.mealsonwheels.R;
-import com.snackhoop.mealsonwheels.ShowRestaurentActivity.RestuarentDetails;
+import com.snackhoop.mealsonwheels.root.RestuarentDetails;
+
 import com.snackhoop.mealsonwheels.ShowRestaurentActivity.ShowRestuarentActivity;
 import com.snackhoop.mealsonwheels.root.GoogleMapDirectionData;
 import com.snackhoop.mealsonwheels.root.OverviewPolyline;

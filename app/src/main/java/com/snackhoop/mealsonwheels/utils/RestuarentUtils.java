@@ -1,7 +1,6 @@
 package com.snackhoop.mealsonwheels.utils;
 
-import com.snackhoop.mealsonwheels.ShowRestaurentActivity.RestuarentDetails;
-
+import com.snackhoop.mealsonwheels.root.RestuarentDetails;
 import java.util.ArrayList;
 import java.util.List;
 
